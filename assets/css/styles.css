@@ -258,6 +258,11 @@ img{
   align-items: center;
 }
 
+.bold-bullet {
+  font-weight: bold;
+  font-size: 1.5em; 
+}
+
 @media screen and (max-width: 968px){
   .nav__menu{
     position: fixed;
