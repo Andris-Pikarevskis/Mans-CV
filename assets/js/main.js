@@ -103,7 +103,7 @@ let resumeButton = document.getElementById('resume-button');
 let opt = {
     margin:       0,
     filename:     'Andris_Pikarevskis_CV.pdf',
-    image:        { type: 'jpeg', quality: 0.98 },
+    image:        { type: 'jpeg', quality: 0.90 },
     html2canvas:  { scale: 4 },
     jsPDF:        { format: 'a4', orientation: 'portrait' }
 }
