@@ -26,6 +26,9 @@ body{margin:0 0 calc(3.5rem + env(safe-area-inset-bottom,0px));line-height:1.6}
 .experience__data,.education__data{min-width:0}
 .experience__title,.experience__company,.education__title,.education__studies,.experience__points{overflow-wrap:anywhere}
 .experience__line{height:calc(100% + 1.5rem)}
+.project__link{justify-self:start;color:#24527b;text-decoration:underline;text-underline-offset:.15em;overflow-wrap:anywhere}
+.project__link:focus-visible{outline:3px solid #3975ba;outline-offset:3px}
+.dark-theme .project__link{color:#9ac7ff}
 .nav__toggle{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;border:0;background:transparent;padding:.5rem}
 .nav__menu{max-height:calc(100dvh - 4rem);overflow:auto}
 .l-header{padding-bottom:env(safe-area-inset-bottom,0px)}
