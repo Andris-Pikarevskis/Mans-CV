@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--========== BOX ICONS ==========-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/vendor/boxicons/boxicons.min.css?v=9695eb52d1e2">
 
     <!--========== CSS ==========-->
-    <link rel="stylesheet" href="assets/css/styles-Andris.css">
+    <link rel="stylesheet" href="assets/css/styles-Andris.css?v=268c0cc23a1b">
+    <link rel="stylesheet" href="assets/css/responsive.css?v=d3051fff92e5">
 
-    <title>Andris Pikarevskis</title>
+    <title>Andris Pikarevskis | IT Projects, Development &amp; Automation</title>
+<meta name="description" content="IT project management, website and e-commerce development, Codex and automation.">
 </head>
 <body>
     <!--========== HEADER ==========-->
@@ -24,84 +24,81 @@
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a href="#home" class="nav__link active-link">
-                            <i class='bx bx-home nav__icon'></i>Home
+                            <i aria-hidden="true" class='bx bx-home nav__icon'></i>Home
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#profile" class="nav__link">
-                            <i class='bx bx-user nav__icon'></i>About Me
+                            <i aria-hidden="true" class='bx bx-user nav__icon'></i>About Me
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#education" class="nav__link">
-                            <i class='bx bx-book nav__icon'></i>Education
+                            <i aria-hidden="true" class='bx bx-book nav__icon'></i>Education
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#skills" class="nav__link">
-                            <i class='bx bx-receipt nav__icon'></i>Skills
+                            <i aria-hidden="true" class='bx bx-receipt nav__icon'></i>Skills
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#experience" class="nav__link">
-                            <i class='bx bx-briefcase-alt nav__icon'></i>Experience
+                            <i aria-hidden="true" class='bx bx-briefcase-alt nav__icon'></i>Experience
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#certificates" class="nav__link">
-                            <i class='bx bx-award nav__icon'></i>Certificates
+                            <i aria-hidden="true" class='bx bx-award nav__icon'></i>Certificates
                         </a>
                     </li>
                 </ul>
             </div>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-grid-alt'></i>
-            </div>
+            <button type="button" class="nav__toggle" id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open navigation menu">
+                <i aria-hidden="true" class='bx bx-grid-alt'></i>
+            </button>
         </nav>
     </header>
 
     <main class="l-main bd-container">
-        <div class="language-switcher">
-            <a href="index.html" class="language-switcher__link">
-                <i class='bx bx-world'></i> LAT
-            </a>
-        </div>
+        <div class="resume-toolbar screen-only" data-screen-only>
+<a href="index.html" class="language-switcher__link" lang="lv" aria-label="View CV in Latvian">LAT</a>
+<button type="button" class="theme-toggle bx bx-moon" id="theme-button" aria-label="Toggle light/dark theme" aria-pressed="false"></button>
+<a class="cv-download" id="resume-button" href="assets/pdf/Andris_Pikarevskis_resume_EN.pdf?v=8469005ddfab" download="Andris_Pikarevskis_CV_EN.pdf"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M5 15v5h14v-5"/></svg><span>Download CV</span></a>
+</div>
         <!-- All elements within this div are generated in PDF -->
         <div class="resume" id="area-cv">
             <div class="resume__left">
                 <!--========== HOME ==========-->
                 <section class="home" id="home">
                     <div class="home__container section bd-grid">
-                        
-                        <div class="home__data bd-grid">
-                            
-                            <img src="assets/img/perfil.jpg" alt="" class="home__img">
-                            
-                            <h1 class="home__title">Andris <b>Pikarevskis</b></h1>
-                            <h3 class="home__profession">IT Project Manager/Business Analyst</h3>
 
-                            <div>
-                                <!-- Button to download your CV saved in the pdf folder. Available for mobile -->
-                                <a download="" href="assets/pdf/Andris_Pikarevskis_CV_Lv.pdf" class="home__button-movil">Download CV</a>
-                            </div>
-                        </div>  
+                        <div class="home__data bd-grid">
+
+                            <img src="assets/img/perfil.jpg?v=4e342280c96b" alt="Andris Pikarevskis" class="home__img">
+
+                            <h1 class="home__title">Andris <b>Pikarevskis</b></h1>
+                            <h3 class="home__profession">IT Project Manager<br/>Business Analyst</h3>
+
+
+                        </div>
 
                         <div class="home__address bd-grid">
                             <span class="home__information">
-                                <i class='bx bx-map home__icon'></i> Riga
+                                <i aria-hidden="true" class='bx bx-map home__icon'></i> Riga
                             </span>
                             <span class="home__information">
-                                <a href="">
-                                    <i class='bx bx-envelope home__icon'></i>a.pikarevskis@gmail.com
+                                <a href="mailto:a.pikarevskis@gmail.com">
+                                    <i aria-hidden="true" class='bx bx-envelope home__icon'></i>a.pikarevskis@gmail.com
                                 </a>
                             </span>
                             <span class="home__information">
-                                <i class='bx bx-phone home__icon'></i> 28823689
+                                <i aria-hidden="true" class='bx bx-phone home__icon'></i> 28823689
                             </span>
                             <span>
-                                <a href="https://www.linkedin.com/in/andris-pikarevskis-b5047aa5/" target="_blank_new" class="social__link">
-                                    <i class='bx bxl-linkedin-square social__icon'></i>
+                                <a href="https://www.linkedin.com/in/andris-pikarevskis-b5047aa5/" target="_blank" rel="noopener" class="social__link">
+                                    <i aria-hidden="true" class='bx bxl-linkedin-square social__icon'></i>
                                     Andris Pikarevskis
                                 </a>
                             </span>
@@ -109,331 +106,124 @@
                     </div>
 
                     <!-- Theme change button -->
-                    <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+
 
                     <!-- Button to generate and download the pdf. Available for desktop. -->
-                    <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+
                 </section>
 
                 <!--========== PROFILE ==========-->
                 <section class="profile section" id="profile">
-                    <h2 class="section-title">PROFESSIONAL SUMMARY</h2>
-                    <p class="profile__description">Experienced IT Project Manager with over 5 years of expertise 
-                        in managing digital projects, improving business processes, and implementing innovative solutions. 
-                        Skilled in coordinating cross-functional teams, collaborating with external providers, and aligning IT 
-                        solutions with business needs. Practical experience with CRM systems, mobile applications, and e-commerce platforms. 
-                        Proficient in project management tools like Jira, Trello, and Confluence, as well as programming 
-                        languages and databases, including JavaScript, PHP, MySQL, 
-                        and MariaDB. Focused on delivering high-quality results, meeting deadlines, and continuously developing technical skills.</p>
-                </section>
+<h2 class="section-title">Professional summary</h2>
+<p class="profile__description">IT Project Manager and Business Analyst with over 5 years of experience in the public and private sectors. I manage system implementations and development projects. I also build websites, an online store and chatbots using AI and Codex.</p>
+</section>
 
                 <!--========== SERTIFICATES ==========-->
-                <section class="profile section" id="profile">
-                    <h2 class="section-title">SERTIFICATES</h2>
-                            <h3 class="education__title">PRINCE2® Foundation(7th Edition)</h3> <br> 
-                            <p class="profile__description">Baltijas Datoru akademija (BDA), 2026</p>
-                </section>
+                <section class="certificate section" id="certificates">
+<h2 class="section-title">Certificates</h2>
+<div class="certificate__content"><h3 class="education__title">PRINCE2® Foundation, 7th edition</h3><p class="profile__description">Baltijas Datoru akadēmija, 2026. Training completion certificate.</p></div>
+</section>
 
                 <!--========== EDUCATION ==========-->
                 <section class="education section" id="education">
-                    <h2 class="section-title">Education</h2>
-                    
-                    <div class="education__container bd-grid">
-                        <div class="education__content">
-                            <div class="education__time">
-                                <span class="education__rounder"></span>
-                                <span class="education__line"></span>
-                            </div>
-                            
-                            <div class="education__data bd-grid">
-                                <h3 class="education__title">Latvian Professional Training Center</h3>
-                                <span class="education__year">09/2023 - 11/2024</span>
-                                <span class="education__studies">Programming - Level 3 professional qualification<br>
-                                    <ul>
-                                        <li><b>Programming:</b> JavaScript, PHP</li>
-                                        <li><b>Databases:</b> MySQL, MS SQL</li>
-                                        <li><b>Web development:</b> HTML5/CSS3</li>
-                                      </ul> 
-                                </span>
-                            </div>
-                        </div>
-                        <div class="education__content">
-                            <div class="education__time">
-                                <span class="education__rounder"></span>
-                                <span class="education__line"></span>
-                            </div>
-                            
-                            <div class="education__data bd-grid">
-                                <h3 class="education__title">FITA</h3>
-                                <span class="education__year">06/2023 - 09/2023</span>
-                                <span class="education__studies">Project management by Agile method <br>
-                                    Management tools: Jira, Trello, Confluence</span>
-                            </div>
-                        </div>
-
-                        <div class="education__content">
-                            <div class="education__time">
-                                <span class="education__rounder"></span>
-                                <span class="education__line"></span>
-                            </div>
-                            
-                            <div class="education__data bd-grid">
-                                <h3 class="education__title">Web School</h3>
-                                <span class="education__year">02/2020 - 09/2020</span>
-                                <span class="education__studies">Front-end development:<br>
-                                    Layout languages: HTML5, CSS3<br>
-                                    Programming language: JavaScript<br><br></span>
-                            </div>
-                        </div>
-
-                        <div class="education__content">
-                            <div class="education__time">
-                                <span class="education__rounder"></span>
-                                <!-- <span class="education__line"></span> -->
-                            </div>
-                            
-                            <div class="education__data bd-grid">
-                                <h3 class="education__title">Riga International School of Economics and Business Administration</h3>
-                                <span class="education__year">2004 - 2009</span>
-                                <span class="education__studies">International Business Management</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+<h2 class="section-title">Education</h2>
+<div class="education__container bd-grid"><div class="education__content"><div class="education__data bd-grid">
+<h3 class="education__title">Latvian Professional Training Center</h3>
+<span class="education__year">2023 - 2024</span>
+<p class="education__studies">Programming, Level 3 professional qualification.</p></div></div><div class="education__content"><div class="education__data bd-grid">
+<h3 class="education__title">FITA</h3>
+<span class="education__year">2023</span>
+<p class="education__studies">Agile project management.</p></div></div><div class="education__content"><div class="education__data bd-grid">
+<h3 class="education__title">Web School</h3>
+<span class="education__year">2020</span>
+<p class="education__studies">Front-end development.</p></div></div><div class="education__content"><div class="education__data bd-grid">
+<h3 class="education__title">RISEBA</h3>
+<span class="education__year">2004 - 2009</span>
+<p class="education__studies">Professional Bachelor&#x27;s degree in International Business Management.</p></div></div></div>
+</section>
 
                 <!--========== SKILLS  ==========-->
                 <section class="skills section" id="skills">
-                    <h2 class="section-title">Skills</h2>
-
-                    <div class="skills__content">
-                        <ul class="skills__data">
-                            <li >
-                                <b>•Project Management Tools:</b> Jira, Trello, Confluence, Miro
-                            </li>
-                            <li >
-                               <b>•Programming Languages:</b> JavaScript, PHP
-                            </li>
-                            <li >
-                                <b>•Web Development:</b> HTML5, CSS3
-                            </li>
-                            <li >
-                                <b>•Databases:</b> MySQL, MariaDB
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+<h2 class="section-title">Skills</h2>
+<div class="skills__content"><div class="skills__group"><h3 class="education__title">Project delivery &amp; analysis</h3><ul class="skills__points"><li>Requirements, implementation, integrations, suppliers and budgets.</li></ul></div><div class="skills__group"><h3 class="education__title">Development</h3><ul class="skills__points"><li>WordPress, WooCommerce; PHP, JavaScript, HTML/CSS.</li></ul></div><div class="skills__group"><h3 class="education__title">AI &amp; automation</h3><ul class="skills__points"><li>Chatbot development; Codex, ChatGPT, scripts and workflows.</li></ul></div><div class="skills__group"><h3 class="education__title">Tools &amp; data</h3><ul class="skills__points"><li>Jira, Confluence, Miro, Git/GitHub; SQL, Excel, GA4/GSC.</li></ul></div></div>
+</section>
             </div>
 
             <div class="resume__right">
                 <!--========== EXPERIENCE ==========-->
                 <section class="experience section" id="experience">
-                    <h2 class="section-title">Work Experience</h2>
-
-                    <div class="experience__container bd-grid">
-                        <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
-
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">CSDD (Road Traffic Safety Directorate)</h3>
-                                    <span class="experience__company">06/2025 – 02/2026 | IT Project Manager</span>
-
-                                    <p class="experience__description">
-                                        Management of the development and implementation of a new queue management system,
-                                        as well as maintenance and gradual replacement of the existing queue system.
-                                        Work with nationwide information systems, ensuring their continuous operation,
-                                        development, and modernization.<br>
-
-                                        <b>Projects:</b><br>
-                                        <span class="bold-bullet">•</span> Requirements and documentation development for the new queue management system<br>
-                                        <span class="bold-bullet">•</span> Maintenance of the existing system and coordination of its replacement<br>
-                                        <span class="bold-bullet">•</span> Opening of new service stations: coordination and supervision of implementation activities<br>
-
-                                        <b>Key achievements:</b><br>
-                                        <span class="bold-bullet">•</span> Initiated the development of the new queue management system<br>
-                                        <span class="bold-bullet">•</span> Created and structured project documentation (functional requirements, technical descriptions, algorithms)<br>
-                                        <span class="bold-bullet">•</span> Successful collaboration with partners, ensuring uninterrupted system operation<br>
-                                        <span class="bold-bullet">•</span> Ensured the opening of new service stations and execution of implementation activities according to plan
-                                    </p>
-                                </div>
-                            </div>
-
-                        <div class="experience__content">
-                            <div class="experience__time">
-                                <span class="experience__rounder"></span>
-                                <span class="experience__line"></span>
-                            </div>
-                            
-                            <div class="experience__data bd-grid">
-                                <h3 class="experience__title">"Business Management College" (Education Sector)</h3>
-                                <span class="experience__company">07/2023 - 05/2024 <u>Project-based work</u>  IS Analyst, IT Project Manager</span>
-                                <p class="experience__description">Maintained and improved internal projects, conducted business process analysis, 
-                                    drafted technical tasks, communicated with external service providers, and defined internal business needs.<br>
-
-                                    <b>Projects I worked on:</b><br>
-                                    <span class="bold-bullet">•</span> CRM system maintenance and improvement<br>
-                                    <span class="bold-bullet">•</span> Enhancements to student communication and learning system<br>
-                                    <span class="bold-bullet">•</span> European funds digitalization project<br>
-                                    <span class="bold-bullet">•</span> Website maintenance<br>
-                                    <b>Key Achievements:</b><br>
-                                    <span class="bold-bullet">•</span> Improved CRM system performance, leading to enhanced data accuracy and accessibility.<br>
-                                    <span class="bold-bullet">•</span> Streamlined the student communication system, increasing efficiency<br>
-                                    <span class="bold-bullet">•</span> Successfully supported the execution of a European funds digitalisation project, 
-                                                                        improving accessibility to educational resources.</p>
-
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="experience__content">
-                            <div class="experience__time">
-                                <span class="experience__rounder"></span>
-                                <span class="experience__line"></span>
-                            </div>
-                            
-                            <div class="experience__data bd-grid">
-                                <h3 class="experience__title">AS "Latvijas pasts" (Postal and delivery services)</h3>
-                                <span class="experience__company">01/2022 - 04/2023 | IS Analyst, IT Project Manager</span>
-                                <p class="experience__description">Managed web development projects and internal IT initiatives, collaborated with external service providers,
-                                     defined requirements, negotiated with company management, prepared procurement requirements,
-                                      drafted technical tasks, and created documentation. Used the Jira management tool.<br>
-
-                                    <b>Projects I worked on:</b><br>
-                                    <span class="bold-bullet">•</span> Internal package tracking and processing system<br>
-                                    <span class="bold-bullet">•</span> Plugins for e-commerce platforms<br>
-                                    <span class="bold-bullet">•</span> Latvian Post mobile application<br>
-                                    <span class="bold-bullet">•</span> Maintenance of internal websites<br>
-                                    <b>Key achivements:</b><br>
-                                    <span class="bold-bullet">•</span> Reworking the CRM system, collecting business needs and preparing procurement documentation<br>
-                                    <span class="bold-bullet">•</span> Played a key role in the creation and maintenance of the Latvian Post mobile application<br>
-                                    <span class="bold-bullet">•</span> Oversaw the development of e-commerce plugins and their launch in a production environment</p>
-                            </div>
-                        </div>
-
-                        <div class="experience__content">
-                            <div class="experience__time">
-                                <span class="experience__rounder"></span>
-                                <span class="experience__line"></span>
-                            </div>
-                            
-                            <div class="experience__data bd-grid">
-                                <h3 class="experience__title">SIA "Latinsoft" (Website, e-commerce store development, web system development)</h3>
-                                <span class="experience__company">11/2019 - 01/2022 | IT Project Manager</span>
-                                <p class="experience__description">Managed the web development team, defined tasks, prepared technical documentation,
-                                     ensured budget adherence, met deadlines, defined business requirements, and worked with the Asana management
-                                      tool. Drafted commercial offers, communicated with clients, and organized client training.<br>
-
-                                    <b>Projects I worked on:</b><br>
-                                    <span class="bold-bullet">•</span> Participation in various solution development, including web systems, e-commerce stores, and websites.<br>
-                                    <span class="bold-bullet">•</span> Work with municipal institutions and their web systems<br>
-                                    <b>Galvenie sasniegumi:</b><br>
-                                    <span class="bold-bullet">•</span> I had the opportunity to build a web development team from the ground up,
-                                     choosing both web developers and designers in the selection process<br>
-                                    <span class="bold-bullet">•</span> I identified the potential in one of the developed solutions and initiated 
-                                    its creation as a separate product, which was later successfully implemented on the market<br>
-                                    <span class="bold-bullet">•</span> I have implemented an effective project tracking tool that
-                                     improved project management and improved teamwork efficiency</p>
-                            </div>
-                        </div>
-
-                        <div class="experience__content">
-                            <div class="experience__time">
-                                <span class="experience__rounder"></span>
-                                <span class="experience__line"></span>
-                            </div>
-                            
-                            <div class="experience__data bd-grid">
-                                <h3 class="experience__title">SIA "HANSAB" (Technological solutions for factories and retail chains)</h3>
-                                <span class="experience__company">04/2018 - 05/2019 | Major Account Consultant</span>
-                                <p class="experience__description">Worked with retail chains and manufacturing companies. 
-                                    Sold security and IT solutions, time-tracking systems, access control, and video surveillance
-                                     systems. Exploration of customer needs, coordination of price offers, solution testing.</p>
-                            </div>
-                        </div>
-
-                        <div class="experience__content">
-                            <div class="experience__time">
-                                <span class="experience__rounder"></span>
-                                <!-- <span class="experience__line"></span> -->
-                            </div>
-                            
-                            <div class="experience__data bd-grid">
-                                <h3 class="experience__title">SIA "TET" (Information Technology/Media)</h3>
-                                <span class="experience__company">11/2015 - 03/2018 | Sales Manager/Telemarketing Specialist</span>
-                                <p class="experience__description">Working with business clients, service and solution sales, consulting 
-                                    on IT solutions and their implementation, cold calling. During this time, I initiated ideas that were
-                                     implemented and integrated into the work process. Led language classes (taught Russian), participated 
-                                     in sports and cultural events.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+<h2 class="section-title">Work experience</h2>
+<div class="experience__container bd-grid"><article class="experience__content">
+<div class="experience__time"><span class="experience__rounder"></span><span class="experience__line"></span></div>
+<div class="experience__data bd-grid"><h3 class="experience__title">Rimi Olympic Centre</h3>
+<span class="experience__company">2026 - present | IT Project and Services Manager</span>
+<ul class="experience__points"><li>Manage Business Central implementation and the development of Bookla booking and customer-portal services.</li><li>Built the new website prototype; coordinate requirements and development partners.</li><li>Coordinate IT infrastructure upgrades, day-to-day IT services, suppliers and budget planning.</li></ul></div></article>
+<article class="experience__content">
+<div class="experience__time"><span class="experience__rounder"></span><span class="experience__line"></span></div>
+<div class="experience__data bd-grid"><h3 class="experience__title">CSDD</h3>
+<span class="experience__company">06/2025 - 02/2026 | IT Project Manager</span>
+<ul class="experience__points"><li>Led requirements for a new queue-management system, modelling customer flows and priority rules.</li><li>Coordinated Qmatic and DIXI maintenance and planning for transition to the new solution.</li><li>Prepared infrastructure and equipment specifications; coordinated suppliers, implementation and testing.</li></ul></div></article>
+<article class="experience__content">
+<div class="experience__time"><span class="experience__rounder"></span><span class="experience__line"></span></div>
+<div class="experience__data bd-grid"><h3 class="experience__title">Business Management College</h3>
+<span class="experience__company">07/2023 - 05/2024 | Systems Analyst / IT Project Manager (project engagement)</span>
+<ul class="experience__points"><li>Analysed business needs and coordinated improvements to CRM, student communication and learning systems.</li><li>Worked on a digitalisation project and website maintenance.</li></ul></div></article>
+<article class="experience__content">
+<div class="experience__time"><span class="experience__rounder"></span><span class="experience__line"></span></div>
+<div class="experience__data bd-grid"><h3 class="experience__title">Latvijas Pasts</h3>
+<span class="experience__company">01/2022 - 04/2023 | Systems Analyst / IT Project Manager</span>
+<ul class="experience__points"><li>Managed web and internal-system projects: a mobile app, shipment processing and e-commerce plugins.</li><li>Prepared CRM redevelopment requirements and procurement documentation; coordinated developers and suppliers.</li></ul></div></article>
+<article class="experience__content">
+<div class="experience__time"><span class="experience__rounder"></span></div>
+<div class="experience__data bd-grid"><h3 class="experience__title">Latinsoft</h3>
+<span class="experience__company">11/2019 - 01/2022 | IT Project Manager</span>
+<ul class="experience__points"><li>Led a website, e-commerce and web-system development team, managing timelines, budgets and clients.</li><li>Helped build the team and develop an existing solution into a separate product launched on the market.</li></ul></div></article></div>
+</section><section class="earlier-experience section" id="earlier-experience">
+<h2 class="section-title">Earlier experience</h2>
+<div class="experience__container bd-grid"><article class="experience__content">
+<div class="experience__time"><span class="experience__rounder"></span><span class="experience__line"></span></div>
+<div class="experience__data bd-grid"><h3 class="experience__title">SIA “HANSAB”</h3>
+<span class="experience__company">04/2018 - 05/2019 | Key Account Consultant</span>
+<ul class="experience__points"><li>B2B consulting and sales of IT and security solutions.</li></ul></div></article>
+<article class="experience__content">
+<div class="experience__time"><span class="experience__rounder"></span></div>
+<div class="experience__data bd-grid"><h3 class="experience__title">SIA “TET”</h3>
+<span class="experience__company">11/2015 - 03/2018 | Sales Manager / Telemarketing Specialist</span>
+<ul class="experience__points"><li>B2B sales of services and IT solutions.</li></ul></div></article></div>
+</section>
 
                 <!--========== LANGUAGES ==========-->
-                <section class="languages section">
-                   
-                    <h2 class="section-title">Language Proficiency</h2>
+                <section class="languages section" id="languages">
+<h2 class="section-title">Language proficiency</h2>
+<p>Latvian - native; Russian - native; English - B2.</p>
+</section><section class="personal-projects section" id="personal-projects">
+<h2 class="section-title">Personal projects</h2>
+<div class="experience__container bd-grid"><article class="experience__content">
+<div class="experience__time"><span class="experience__rounder"></span><span class="experience__line"></span></div>
+<div class="experience__data bd-grid"><h3 class="experience__title">INEX Cosmetics</h3>
+<span class="experience__company">Spare-time project | Web Development &amp; Automation</span>
+<ul class="experience__points"><li>Build and maintain a WordPress/WooCommerce store using Codex: PHP, JavaScript, HTML/CSS and Latvian/English functionality.</li><li>Improve shopping flows and payment/delivery integrations; automate order emails and PDF documents.</li><li>Automate data, content and reporting tasks; perform SEO and regression checks.</li></ul></div></article>
+<article class="experience__content">
+<div class="experience__time"><span class="experience__rounder"></span></div>
+<div class="experience__data bd-grid"><h3 class="experience__title">Chatbots &amp; AI Solutions</h3>
+<span class="experience__company">Spare-time projects | Codex, ChatGPT &amp; Automation</span>
+<ul class="experience__points"><li>Build chatbots and use AI tools to solve practical tasks.</li><li>Use Codex and ChatGPT to develop, improve and test code and automate workflows.</li></ul></div></article></div>
+</section>
 
-                    <div class="languages__container">
-                        <ul class="languages__content bd-grid">
-                            <li class="languages__name">
-                                <span class="languages__circle"></span>Latvian (Native)
-                            </li>
-                            <li class="languages__name">
-                                <span class="languages__circle"></span>English (B2) 
-                            </li>
-                            <li class="languages__name">
-                                <span class="languages__circle"></span>Russian (Native)
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                    
 
                 <!--========== INTERESTS ==========-->
-                <section class="interests section">
-                    <h2 class="section-title">Interests</h2>
 
-                    <div>
-                        <div class="interests__content">
-                            <i class='bx bxs-book interests__icon'></i>
-                            <span class="interests__name">Studies:<br>
-                                <p class="experience__description">I have gained practical knowledge in IT, web technologies,
-                                     and IT project management, and I continuously improve my knowledge in these areas to stay 
-                                     informed about the latest trends and technologies in the industry</p>
-                            </span>
-                        </div>
-                        <div class="interests__content">
-                            <i class='bx bx-headphone interests__icon'></i>
-                            <span class="interests__name">Music </span>
-                        </div>
-                        <div class="interests__content">
-                            <i class='bx bxs-plane-alt interests__icon'></i>
-                            <span class="interests__name">Traveling</span>
-                        </div>
-                        <div class="interests__content">
-                            <i class='bx bx-dumbbell interests__icon'></i>
-                            <span class="interests__name">Fitness</span>
-                        </div>
-                    </div>
-                </section>
             </div>
         </div>
     </main>
 
     <!--========== SCROLL TOP ==========-->
     <a href="#" class="scrolltop" id="scroll-top">
-        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        <i aria-hidden="true" class='bx bx-up-arrow-alt scrolltop__icon'></i>
     </a>
 
-    
-    <!--========== HTML2PDF ==========-->
-    <script src="assets/js/html2pdf.bundle.min.js"></script>
-
     <!--========== MAIN JS ==========-->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js?v=e61b1b6e4aee"></script>
 </body>
 </html>
 

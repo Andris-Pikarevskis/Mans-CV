@@ -1,0 +1,87 @@
+/* Device layout and screen controls, using the original CV colours and type. */
+html{scroll-padding-top:5.5rem}
+body{margin:0 0 calc(3.5rem + env(safe-area-inset-bottom,0px));line-height:1.6}
+.bd-container{width:calc(100% - 1.5rem);max-width:968px;margin-inline:auto}
+.l-main{margin-top:0;margin-bottom:1.5rem}
+.resume-toolbar{position:sticky;top:0;z-index:90;display:flex;align-items:center;justify-content:flex-end;gap:.5rem;padding:.65rem 0;background:var(--body-color)}
+.cv-download,.language-switcher__link,.theme-toggle{display:inline-flex;align-items:center;justify-content:center;min-height:44px;flex-shrink:0;border-radius:.4rem}
+.cv-download{gap:.5rem;padding:.65rem 1rem;background:var(--title-color);color:var(--container-color);border:1px solid var(--title-color);font:600 .9rem/1.3 var(--body-font);white-space:nowrap;text-decoration:none}
+.cv-download svg{width:18px;height:18px;flex:none}
+.cv-download:hover{opacity:.85}
+.language-switcher__link{min-width:44px;padding:.5rem;color:var(--title-color);font-weight:500}
+.theme-toggle{min-width:44px;padding:.5rem;border:0;background:transparent;color:var(--title-color);font-size:1.25rem;cursor:pointer}
+.cv-download:focus-visible,.language-switcher__link:focus-visible,.theme-toggle:focus-visible,.nav__toggle:focus-visible,.nav__link:focus-visible{outline:3px solid #3975ba;outline-offset:3px}
+.resume{display:grid;grid-template-columns:minmax(0,1fr);background:var(--container-color);box-shadow:0 0 8px rgba(13,12,12,.15)}
+.resume__left,.resume__right{min-width:0}
+.resume .section{min-width:0;padding:1.5rem 1rem;scroll-margin-top:5.5rem}
+.section-title{font-size:clamp(1.05rem,2.2vw,1.25rem);letter-spacing:clamp(.12rem,.45vw,.28rem);text-align:left;overflow-wrap:anywhere}
+.profile__description{text-align:left}
+.home__container{gap:1.5rem;padding:0}
+.home__data{gap:.65rem}
+.home__address{gap:.65rem}
+.home__img{object-fit:cover;object-position:center 20%;margin-bottom:.25rem}
+.home__information,.social__link{min-width:0;overflow-wrap:anywhere}
+.home__information a{min-width:0;overflow-wrap:anywhere}
+.experience__time{flex:0 0 1.65rem;padding-right:.65rem}
+.experience__data,.education__data{min-width:0}
+.experience__title,.experience__company,.education__title,.education__studies,.experience__points{overflow-wrap:anywhere}
+.experience__line{height:calc(100% + 1.5rem)}
+.nav__toggle{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;border:0;background:transparent;padding:.5rem}
+.nav__menu{max-height:calc(100dvh - 4rem);overflow:auto}
+.l-header{padding-bottom:env(safe-area-inset-bottom,0px)}
+
+/* Reading order on phones: identity, profile, employment, then supporting details. */
+@media screen and (max-width:767px){
+  .resume__left,.resume__right{display:contents}
+  #home{order:0;background:var(--container-color-alt)}
+  #profile{order:1}
+  #experience{order:2}
+  #earlier-experience{order:3}
+  #skills{order:4;background:var(--container-color-alt)}
+  #certificates{order:5;background:var(--container-color-alt)}
+  #education{order:6;background:var(--container-color-alt)}
+  #languages{order:7}
+  #personal-projects{order:8}
+  .home__address{max-width:24rem;width:100%;margin-inline:auto}
+  .home__title{font-size:1.5rem}
+  .home__profession{font-size:1rem}
+  .nav__menu{bottom:-100%}
+  .nav__menu.show-menu{bottom:calc(3rem + env(safe-area-inset-bottom,0px))}
+}
+
+/* A readable sidebar and flexible main column on tablets and desktop screens. */
+@media screen and (min-width:768px){
+  body{margin:0}
+  .bd-container{width:calc(100% - 2rem)}
+  .resume{grid-template-columns:minmax(220px,1fr) minmax(0,2fr)}
+  .resume__left{display:block;background:var(--container-color-alt);padding:0}
+  .resume__right{display:block;padding:0}
+  .resume .section{padding:1.5rem 1rem}
+  .l-header,.scrolltop{display:none}
+}
+
+@media screen and (min-width:1024px){
+  .l-main{margin-bottom:2rem}
+  .resume .section{padding:1.65rem 1.25rem}
+}
+
+/* These controls belong to the website, never to a printed or saved PDF. */
+@media print{
+  @page{size:A4;margin:12mm}
+  .screen-only,.resume-toolbar,.l-header,.scrolltop,.change-theme,.generate-pdf,.home__button-movil{display:none!important}
+  html{scroll-padding:0}
+  body,body.dark-theme{margin:0!important;padding:0!important;background:white!important;color:#403a3a!important;font-size:9.5pt;line-height:1.4;--title-color:#0b0a0a;--text-color:#403a3a;--text-color-light:#707070;--container-color:#fff;--container-color-alt:#f0efef}
+  .bd-container,.l-main{width:100%;max-width:none;margin:0!important}
+  .resume{display:grid;grid-template-columns:31% 69%;box-shadow:none}
+  .resume__left,.resume__right{display:block;padding:0}
+  .resume__left{background:#f0efef}
+  .resume .section{padding:10pt 8pt;scroll-margin:0}
+  .section-title{font-size:10.5pt;letter-spacing:2pt;margin-bottom:9pt}
+  .home__title{font-size:14pt}
+  .home__profession,.experience__title,.education__title{font-size:10pt}
+  .home__img{width:78pt;height:78pt}
+  .home__data,.home__container,.home__address,.bd-grid{gap:7pt}
+  .experience__content,.education__content,.skills__group,.certificate__content{break-inside:avoid}
+  h2,h3{break-after:avoid}
+  a{color:inherit;text-decoration:none}
+}
